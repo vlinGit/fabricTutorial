@@ -1,5 +1,6 @@
 package com.pumpkin.tutorialmod;
 
+import com.pumpkin.tutorialmod.block.ModBlock;
 import com.pumpkin.tutorialmod.item.ModItem;
 import com.pumpkin.tutorialmod.item.ModItemGroup;
 import net.fabricmc.api.ModInitializer;
@@ -23,5 +24,6 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItemGroup.registerItemGroups();
 		ModItem.registerModItems();
+		ModBlock.registerModBlock();
 	}
 }

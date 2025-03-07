@@ -16,8 +16,10 @@ public class ModItem {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
     public static final Item YAHIRG = registerItem("yahirg", new Item(new FabricItemSettings()));
+    public static final Item TACO = registerItem("taco", new Item(new FabricItemSettings()));
+    public static final Item GOKU = registerItem("goku", new Item(new FabricItemSettings()));
     public static final Item[] items = {
-        RUBY, RAW_RUBY, YAHIRG
+        RUBY, RAW_RUBY, YAHIRG, TACO, GOKU
     };
 
     // creative mode tab

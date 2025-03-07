@@ -1,8 +1,10 @@
 package com.pumpkin.tutorialmod.item;
 
 import com.pumpkin.tutorialmod.TutorialMod;
+import com.pumpkin.tutorialmod.block.ModBlock;
 import com.pumpkin.tutorialmod.item.ModItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,9 +17,12 @@ public class ModItemGroup {
     public static final ItemGroup GEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "gems"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.gem"))
-                    .icon(() -> new ItemStack(ModItem.RUBY)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItem.YAHIRG)).entries((displayContext, entries) -> {
                         for (Item item: ModItem.items){
                             entries.add(item);
+                        }
+                        for (Block block: ModBlock.blocks){
+                            entries.add(block);
                         }
                     }).build());
     public static void registerItemGroups() {

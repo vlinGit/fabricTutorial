@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#o#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorial-mod:taco"
+    },
+    "o": {
+      "item": "tutorial-mod:goku"
+    }
+  },
+  "result": {
+    "item": "tutorial-mod:yahirg"
+  }
+}
